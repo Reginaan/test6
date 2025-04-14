@@ -20,7 +20,7 @@ export const Feed: FC = () => {
               {new Date(item.createdAt).toLocaleDateString("ru-RU")}
             </p>
           </div>
-          <p>{item.description}</p>
+          <p className="feed-card-description">{item.description}</p>
         </div>
       ))}
     </div>

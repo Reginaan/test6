@@ -45,3 +45,10 @@
   color: #666;
   margin: 0;
 }
+
+.feed-card-description {
+  margin-top: 10px;
+  color: #444;
+  line-height: 1.5;
+  font-size: 0.95em;
+}

@@ -3,7 +3,6 @@ import { mockData } from "../data/mock";
 import "./Feed.css";
 
 export const Feed: FC = () => {
-  console.log("Rendering Feed");
   return (
     <div className="feed-container">
       <h2>Лента</h2>

@@ -76,7 +76,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #aaa; /* светло-серый */
+  color: #aaa;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.2s;
@@ -89,4 +89,17 @@
 .sidebar-footer-icon {
   width: 18px;
   height: 18px;
+}
+
+.sidebar-menu-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.sidebar-menu-counter-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
 }

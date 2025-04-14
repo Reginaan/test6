@@ -4,6 +4,7 @@ import logoSrc from "../../assets/icons/logo sign (1).svg";
 import { menu } from "./data/menu";
 import infoIcon from "../../assets/icons/info.svg";
 import "./Sidebar.css";
+import counterIcon from "../../assets/icons/counter frame (1).svg";
 
 export const Sidebar: FC = () => {
   const location = useLocation();
@@ -30,7 +31,16 @@ export const Sidebar: FC = () => {
                     alt={label}
                     className="sidebar-menu-item-icon"
                   />
-                  <span>{label}</span>
+                  <span className="sidebar-menu-label">
+                    {label}
+                    {(label === "Уведомления" || label === "Чаты") && (
+                      <img
+                        src={counterIcon}
+                        alt="1"
+                        className="sidebar-menu-counter-icon"
+                      />
+                    )}
+                  </span>
                 </div>
               </Link>
             );

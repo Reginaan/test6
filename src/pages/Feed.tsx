@@ -14,10 +14,12 @@ export const Feed: FC = () => {
             width={item.width / 4}
             height={item.height / 4}
           />
-          <h3>{item.title}</h3>
-          <p className="feed-card-date">
-            {new Date(item.createdAt).toLocaleDateString("ru-RU")}
-          </p>
+          <div className="feed-card-header">
+            <h3 className="feed-card-title">{item.title}</h3>
+            <p className="feed-card-date">
+              {new Date(item.createdAt).toLocaleDateString("ru-RU")}
+            </p>
+          </div>
           <p>{item.description}</p>
         </div>
       ))}

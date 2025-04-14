@@ -2,6 +2,7 @@ import { FC } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logoSrc from "../../assets/icons/logo sign (1).svg";
 import { menu } from "./data/menu";
+import infoIcon from "../../assets/icons/info.svg";
 import "./Sidebar.css";
 
 export const Sidebar: FC = () => {
@@ -35,6 +36,16 @@ export const Sidebar: FC = () => {
             );
           })}
         </div>
+      </div>
+      <div className="sidebar-footer">
+        <Link to="/about" className="sidebar-footer-link">
+          <img
+            src={infoIcon}
+            alt="О компании"
+            className="sidebar-footer-icon"
+          />
+          <span>О компании...</span>
+        </Link>
       </div>
     </div>
   );

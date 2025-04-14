@@ -7,6 +7,7 @@ import { Video } from "./pages/Video";
 import { Save } from "./pages/Save";
 import { Bells } from "./pages/Bells";
 import { Chat } from "./pages/Chat";
+import { About } from "./pages/About";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/save" element={<Save />} />
           <Route path="/bells" element={<Bells />} />
           <Route path="/chat" element={<Chat />} />
+          <Route path="/about" element={<About />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -30,10 +30,10 @@ export const mockData: MockItem[] = [
       "Однажды эта строка текста решила отправиться в путешествие по просторам интернета. Она встретила множество других строк, но осталась верна своему предназначению — быть примером.",
   },
   {
-    id: "MTg0MjA3MA",
-    url: "https://cdn2.thecatapi.com/images/MTg0MjA3MA.jpg",
+    id: "c6",
+    url: "https://cdn2.thecatapi.com/images/c6.jpg",
     width: 1200,
-    height: 900,
+    height: 800,
     createdAt: "2025-04-12T09:45:00Z",
     title: "Кот на подоконнике",
     description:

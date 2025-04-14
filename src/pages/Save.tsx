@@ -1,9 +1,5 @@
-import { FC } from "react";
-
-export const Save: FC = () => {
-  return (
-    <div>
-      <h2>Сохраненные</h2>
-    </div>
-  );
-};
+export const Save = () => (
+  <div>
+    <h2>Сохраненные</h2>
+  </div>
+);

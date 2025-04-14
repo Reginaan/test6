@@ -1,9 +1,5 @@
-import { FC } from "react";
-
-export const Bells: FC = () => {
-  return (
-    <div>
-      <h2>Уведомления</h2>
-    </div>
-  );
-};
+export const Bells = () => (
+  <div>
+    <h2>Уведомления</h2>
+  </div>
+);

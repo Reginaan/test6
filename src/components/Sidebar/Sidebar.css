@@ -99,7 +99,15 @@
 }
 
 .sidebar-menu-counter-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20px;
   height: 20px;
   margin-left: 8px;
+  background-color: #1879ff;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
 }

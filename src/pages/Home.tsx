@@ -1,9 +1,5 @@
-import { FC } from "react";
-
-export const Home: FC = () => {
-  return (
-    <div>
-      <h2>Домашняя страница</h2>
-    </div>
-  );
-};
+export const Home = () => (
+  <div>
+    <h2>Домашняя страница</h2>
+  </div>
+);

@@ -1,12 +1,11 @@
-import { FC } from "react";
-import { Link, useLocation } from "react-router-dom";
-import logoSrc from "../../assets/icons/logo sign (1).svg";
-import { menu } from "./data/menu";
-import infoIcon from "../../assets/icons/info.svg";
-import "./Sidebar.css";
-import counterIcon from "../../assets/icons/counter frame (1).svg";
+import { Link, useLocation } from 'react-router-dom';
+import logoSrc from '@assets/icons/logo.svg';
+import infoIcon from '@assets/icons/info.svg';
+import { menu, newsCounts } from './data/menu';
 
-export const Sidebar: FC = () => {
+import './Sidebar.css';
+
+export const Sidebar = () => {
   const location = useLocation();
 
   return (
@@ -21,10 +20,14 @@ export const Sidebar: FC = () => {
         <div className="sidebar-menu">
           {menu.map(({ iconSrc, href, label }) => {
             const isActive = location.pathname === href;
+            const count = newsCounts.find(
+              (item) => item.path === href.split('/')[1]
+            )?.count;
+
             return (
               <Link to={href} key={href} className="sidebar-menu-item-link">
                 <div
-                  className={`sidebar-menu-item ${isActive ? "active" : ""}`}
+                  className={`sidebar-menu-item ${isActive ? 'active' : ''}`}
                 >
                   <img
                     src={iconSrc}
@@ -33,12 +36,9 @@ export const Sidebar: FC = () => {
                   />
                   <span className="sidebar-menu-label">
                     {label}
-                    {(label === "Уведомления" || label === "Чаты") && (
-                      <img
-                        src={counterIcon}
-                        alt="1"
-                        className="sidebar-menu-counter-icon"
-                      />
+
+                    {count && (
+                      <div className="sidebar-menu-counter-icon">{count}</div>
                     )}
                   </span>
                 </div>
